@@ -14,6 +14,7 @@
 		CCED22011CD33749002A4A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCED21FF1CD33749002A4A9F /* LaunchScreen.storyboard */; };
 		CCED220C1CD33749002A4A9F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED220B1CD33749002A4A9F /* CalculatorTests.swift */; };
 		CCED22171CD33749002A4A9F /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED22161CD33749002A4A9F /* CalculatorUITests.swift */; };
+		CCED222D1CD36AFD002A4A9F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CCED222C1CD36AFD002A4A9F /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CCED22121CD33749002A4A9F /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED22161CD33749002A4A9F /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		CCED22181CD33749002A4A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCED222C1CD36AFD002A4A9F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		CCED21EA1CD33748002A4A9F = {
 			isa = PBXGroup;
 			children = (
+				CCED222C1CD36AFD002A4A9F /* README.md */,
 				CCED21F51CD33748002A4A9F /* Calculator */,
 				CCED220A1CD33749002A4A9F /* CalculatorTests */,
 				CCED22151CD33749002A4A9F /* CalculatorUITests */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCED222D1CD36AFD002A4A9F /* README.md in Sources */,
 				CCED21F91CD33748002A4A9F /* ViewController.swift in Sources */,
 				CCED21F71CD33748002A4A9F /* AppDelegate.swift in Sources */,
 			);
@@ -494,6 +498,7 @@
 				CCED221D1CD33749002A4A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCED221E1CD33749002A4A9F /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				CCED22201CD33749002A4A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCED22211CD33749002A4A9F /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				CCED22231CD33749002A4A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
