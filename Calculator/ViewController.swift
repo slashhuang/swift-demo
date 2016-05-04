@@ -28,6 +28,59 @@ class ViewController: UIViewController {//继承语法
         print("digit is \(digit)")
         //it's a constant
     }
+    var operateStack = Array<Double>();
 
+    @IBAction func operate(sender: UIButton) {
+        let operation = sender.currentTitle!;
+        if(userInTheMiddleOfTyping){
+            enterKey();
+        }
+        switch operation{
+            case "×"://高级语法糖
+                performOperate({(opt1:Double,opt2:Double)->Double in
+                    return opt1*opt2;
+                    })
+                break;
+            case "÷":
+                performOperate({(opt1:Double,opt2:Double)->Double in
+                    return opt1/opt2;
+                })
+                break;
+            case "+":
+                performOperate({(opt1:Double,opt2:Double)->Double in
+                    return opt1 + opt2;
+                })
+                break;
+             case "−":
+                performOperate({(opt1:Double,opt2:Double)->Double in
+                    return opt1 - opt2;
+                })
+                break;
+            default:
+                break;
+        }
+    }
+    func performOperate(operation:(Double,Double)->Double){
+        if(operateStack.count>=2){
+            displayValue = operation(operateStack.removeLast(),operateStack.removeLast());
+            enterKey();
+        }
+    }
+    
+    @IBAction func enterKey() {
+        userInTheMiddleOfTyping=false;
+        operateStack.append(displayValue);
+        print("\(operateStack)");
+    }
+    var displayValue:Double{
+        get{
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue;
+        }
+        set{
+            display.text="\(newValue)"
+            userInTheMiddleOfTyping=false;
+        }
+    }
+    
 }
 
